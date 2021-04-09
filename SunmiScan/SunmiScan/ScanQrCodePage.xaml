@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SunmiScan.ScanQrCodePage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button
+                x:Name="ScanBarCodeBtn"
+                Clicked="ScanBarCodeBtn_OnClicked"
+                Text="扫描二维码">
+            </Button>
+            <Label x:Name="ScanTextResult" Text="Hello Xamarin.Forms!" />
+
+            <Button
+                x:Name="CustomScanBarCodeBtn"
+                Clicked="CustomScanBarCodeBtn_OnClicked"
+                Text="自定义扫描二维码">
+
+            </Button>
+            <Label x:Name="CustomScanResult" HorizontalOptions="CenterAndExpand">
+            </Label>
+
+            <Button
+                x:Name="BuildQrCdoeBtn"
+                Clicked="BuildQrCdoeBtn_OnClicked"
+                Text="生产二维码">
+            </Button>
+            <Grid x:Name="QrCodeSite" HeightRequest="300">
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
