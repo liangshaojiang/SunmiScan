@@ -26,6 +26,7 @@ namespace SunmiScan
                 AutomationId = "zxingDefaultOverlay_BottomTextLabel",
             };
 
+
             FlashLabel = new Label
             {
                 HorizontalOptions = End,
